@@ -1,17 +1,19 @@
 from __future__ import division
 from __future__ import print_function
 
+import sys
 import dateutil
 import dateutil.tz
 import datetime
 import argparse
 import pprint
 
-from misc.datasets import TextDataset
-from stageI.model import CondGAN
-from stageI.trainer import CondGANTrainer
-from misc.utils import mkdir_p
-from misc.config import cfg, cfg_from_file
+sys.path.insert(1, '/home/path_to_StackGAN/StackGAN/misc/')
+from datasets import TextDataset
+from utils import mkdir_p
+from config import cfg, cfg_from_file
+from model import CondGAN
+from trainer import CondGANTrainer
 
 
 def parse_args():
