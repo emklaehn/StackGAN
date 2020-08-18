@@ -10,9 +10,9 @@ import sys
 from six.moves import range
 from progressbar import ETA, Bar, Percentage, ProgressBar
 
-
-from misc.config import cfg
-from misc.utils import mkdir_p
+sys.path.insert(1, '/home/PATH_TO_FOLDER/StackGAN/misc/')
+from config import cfg
+from utils import mkdir_p
 
 TINY = 1e-8
 
