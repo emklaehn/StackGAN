@@ -3,6 +3,7 @@ from __future__ import print_function
 
 import prettytensor as pt
 import tensorflow as tf
+import sys
 sys.path.insert(1, '/home/PATH_TO_FOLDER/StackGAN/misc/')
 import custom_ops
 from custom_ops import leaky_rectify
